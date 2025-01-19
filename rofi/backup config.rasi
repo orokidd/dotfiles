@@ -1,0 +1,80 @@
+configuration {
+  show-icons: false;
+  display-ssh:    "󰣀 ssh:";
+  display-run:    "󱓞 run:";
+  display-drun:   "󰣖 drun:";
+  display-window: "󱂬 window:";
+  display-combi:  "󰕘 combi:";
+  display-filebrowser: "󰉋 filebrowser:";
+}
+
+window {
+    height:                      20em;
+    width:                       30em;
+    fullscreen:                  false;
+    enabled:                     true;
+    spacing:                     0em;
+    padding:                     0em;
+    border-color: #ff0000;
+}
+
+mainbox {
+    enabled:                     true;
+    spacing:                     0em;
+    padding:                     0em;
+    orientation:                 vertical;
+    background-color: transparent;
+    text-color:  #ff0000;
+}
+
+
+inputbar {
+  enabled:                     true;
+  text-color:  #ff0000;
+  padding: 12px;
+  background-color: transparent;
+}
+
+box{
+  text-color: #ff0000;
+}
+
+prompt{
+  text-color: #ff0000;
+}
+
+entry{
+  text-color: #ff0000;
+}
+
+listbox {
+    spacing:                     0em;
+    padding:                     0em;
+    text-color: #b8a06d;
+    background-color: transparent;
+}
+
+listview {
+    enabled:                     true;
+    spacing:                     0em;
+    padding:                     0em;
+    columns:                     1;
+    lines:                       8;
+    scrollbar:                   false;
+    layout:                      vertical;
+    cursor:                      "default";
+    background-color: transparent;
+}
+
+element {
+    enabled:                     true;
+    padding: 12px 0;
+    background-color: transparent;
+}
+element selected.normal {
+    background-color: #b8a06d;
+    text-color:  #ff0000;
+}
+element-text {
+    cursor:                      inherit;
+}

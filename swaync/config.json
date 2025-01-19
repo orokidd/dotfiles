@@ -1,0 +1,112 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "top",
+  "cssPriority": "user",
+	"layer": "overlay",
+
+    "control-center-margin-top": 10,
+    "control-center-margin-bottom": 10,
+    "control-center-margin-right": 10,
+    "control-center-margin-left": 10,
+    "control-center-width": 450,
+    "control-center-height": 800,
+    
+    "notification-icon-size": 64,
+    "notification-window-width": 440,
+    "notification-body-image-height": 100,
+    "notification-body-image-width": 200,
+
+    "timeout": 3,
+    "timeout-low": 2,
+    "timeout-critical": 4,
+
+    "fit-to-screen": false,
+    "keyboard-shortcuts": true,
+    "image-visibility": "when-available",
+    "transition-time": 200,
+    "hide-on-clear": false,
+    "hide-on-action": false,
+    "script-fail-notify": true,
+  "widgets": [
+    "buttons-grid",
+    "mpris",
+    "title",
+    "notifications"
+  ],
+  "widget-config": {
+    "inhibitors": {
+      "text": "Inhibitors",
+      "button-text": "Clear All",
+      "clear-all-button": true
+    },
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": "Clear All"
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    },
+    "label": {
+      "max-lines": 5,
+      "text": "Label Text"
+    },
+    "mpris": {
+      "image-size": 80
+    },
+     "volume": {
+            "label": "󰕾"
+     },
+     "menubar": {
+			"menu#power": {
+				"label": "Power",
+				"position": "right",
+				"actions": [
+					{
+						"label": "Shut down",
+						"command": "systemctl poweroff"
+					},
+          {
+					  "label": "Restart",
+						"command": "systemctl reboot"
+          }
+          ]
+			},
+			"buttons#screenshot": {
+				"position": "right",
+				"actions": [
+					{
+						"label": "Screenshot",
+						"command": "grim"
+					}
+					
+				]
+			}
+		},
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "󰐥",
+          // "command": "systemctl poweroff"
+      },
+      {
+          "label": "󰕾",
+          "command": "swayosd-client --output-volume mute-toggle"
+      },
+      {
+          "label": "󰍬",
+          "command": "swayosd-client --input-volume mute-toggle"
+      },
+      {
+          "label": "󰖩",
+          "command": "$HOME/.local/bin/shved/rofi-menus/wifi-menu.sh"
+      },
+      {
+          "label": "󰂯",
+          "command": "blueman-manager"
+      }
+      ]
+    }
+  }
+}

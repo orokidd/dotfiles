@@ -1,0 +1,12 @@
+configuration {
+  show-icons: true;
+  font: "JetBrains Mono 12";
+  display-ssh:    " 󰣀  ssh:";
+  display-run:    " 󱓞  Run:";
+  display-drun:   " Run:";
+  display-window: " 󱂬  Window:";
+  display-combi:  " 󰕘  Combi:";
+  display-filebrowser: " 󰉋  filebrowser:";
+}
+
+@theme "~/.config/rofi/gruvbox-material.rasi"

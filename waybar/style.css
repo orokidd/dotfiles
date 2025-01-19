@@ -1,0 +1,199 @@
+* {
+	font-family: "GeistMono";
+	/* font-size: 14px; */
+    font-weight: bold;    
+}
+
+window#waybar {
+    background-color: rgba(39, 39, 39, 0.6);
+    color: #ebdbb2;
+}
+
+.modules-right {
+    padding-right: 10px;
+}
+
+#workspaces {
+    font-size: 8px;
+}
+
+#workspaces button {
+    border: none;
+    border-radius: 0;
+    padding: 0 10px;
+    background-color: transparent;
+    color: #998e71;
+}
+
+#workspaces button:hover {
+    background: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces button.active{
+    color: #ebdbb2;
+}
+
+
+#clock,
+#custom-notification,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#custom-media,
+#mpris,
+#tray,
+#mode,
+#idle_inhibitor,
+#power-profiles-daemon,
+#mpd,
+#custom-search,
+#custom-power {
+    padding: 0px 12px;
+    color: #ebdbb2;
+}
+
+#window {
+    margin: 0 4px;
+}
+
+#custom-notification {
+    font-family: "NotoSansMono Nerd Font";
+    transition: 0.3s;
+  }
+
+#custom-notification:hover {
+    color: #a37800;
+  }
+
+#custom-search {
+    transition: 0.3s;
+}
+
+#custom-search:hover {
+    color: #a37800;
+}
+
+#clock {
+    transition: 0.3s;
+}
+
+#clock:hover {
+    color: #a37800;
+}
+
+#cpu {
+    transition: 0.3s;
+}
+
+#cpu:hover {
+    color: #a37800;
+}
+
+#memory {
+    transition: 0.3s;
+}
+
+#memory:hover {
+    color: #a37800;
+}
+
+#network {
+    transition: 0.3s;
+}
+
+#network:hover {
+    color: #a37800;
+}
+
+#network.disconnected {
+    color: #d42626;
+}
+
+#pulseaudio {
+    transition: 0.3s;
+}
+
+#pulseaudio:hover {
+    color: #a37800;
+}
+
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+#mpris {
+    opacity: 0;
+    transition: 0.3s ease-in-out
+}
+
+#mpris.playing {
+    opacity: 1;
+}
+
+#mpris.paused {
+    opacity: 1;
+}
+
+#mpris:hover {
+    color: #a37800;
+}
+
+#tray {
+    background-color: #554f42;
+    border-radius: 14px;
+    margin: 4px 0px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#custom-power {
+    transition: 0.3s;
+}
+
+#custom-power:hover {
+    color: #a37800;
+}
+
+#custom-media {
+    background-color: #66cc99;
+    color: #2a5c45;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#temperature {
+    background-color: #f0932b;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+#mpd {
+    background-color: #66cc99;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: #f53c3c;
+}
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+}
