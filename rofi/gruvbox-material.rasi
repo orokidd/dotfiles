@@ -98,7 +98,7 @@ element.normal.urgent {
 }
 
 element.selected.normal {
-    background-color: @gruv7;
+    background-color: @gruv1;
     text-color: @gruv0;
 }
 
