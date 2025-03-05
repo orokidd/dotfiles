@@ -9,14 +9,14 @@
     "margin-bottom": 8,
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "tray"
+        "hyprland/workspaces"
+        // "tray"
     ],
     // "modules-center": [
 	// "hyprland/window"
     // ],
     "modules-right": [
-        // "custom/search",
+        "custom/search",
         // "custom/notification",
         "pulseaudio",
         // "network",
