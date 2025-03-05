@@ -29,6 +29,8 @@
 
   transparent: rgba(0,0,0,0.1);
 
+  b-radius: 20px;
+
 }
 
 window {
@@ -42,11 +44,12 @@ window {
     orientation: horizontal;
     x-offset: -8px;
     y-offset: 36px;
-    
+    /* border: 2px solid; */
+    /* border-color: #000000FF; */
+    /* border-radius: @b-radius; */
 }
 
 mainbox {
-    
     spacing: 0;
     children: [ inputbar, message, listview ];
     /* border: 2px; */
@@ -55,13 +58,12 @@ mainbox {
 
 message {
     padding: 10px;
-    /* border:  0px 2px 2px 2px; */
 }
 
 inputbar {
     color: @gruv6;
     padding: 14px;
-    background-color: transparent;
+    background-color: @transparent;
 }
 
 entry, prompt, case-indicator {
@@ -75,15 +77,14 @@ prompt {
 
 listview {
     padding: 8px;
-    border-radius: 0px 0px 20px 20px;
-    background-color: transparent;
+    background-color: @transparent;
     dynamic: false;
 }
 
 element {
     padding: 14px;
     vertical-align: 0.5;
-    border-radius: 5px;
+    border-radius: 2px;
     color: @foreground;
     text-color: @gruv6;
     background-color: transparent;
@@ -98,7 +99,7 @@ element.normal.urgent {
 }
 
 element.selected.normal {
-    background-color: @gruv1;
+    background-color: #2B2B2B;
     text-color: @gruv0;
 }
 

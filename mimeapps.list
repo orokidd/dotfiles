@@ -1,5 +1,8 @@
 [Default Applications]
-text/plain=code.desktop
+text/plain=org.xfce.mousepad.desktop
+image/jpeg=userapp-feh-7PH502.desktop
 
 [Added Associations]
-text/plain=code.desktop;
+text/plain=code.desktop;libreoffice-writer.desktop;org.xfce.mousepad.desktop;
+image/png=userapp-feh-7PH502.desktop;
+image/jpeg=userapp-feh-7PH502.desktop;

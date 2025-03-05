@@ -2,24 +2,26 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "position": "bottom",
     "height": 31, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
+    "width": 480, // Waybar width
     "spacing": 8, // Gaps between modules (4px)
+    "margin-bottom": 8,
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
         "tray"
     ],
-    "modules-center": [
-	"hyprland/window"
-    ],
+    // "modules-center": [
+	// "hyprland/window"
+    // ],
     "modules-right": [
-        "custom/search",
-        "custom/notification",
+        // "custom/search",
+        // "custom/notification",
         "pulseaudio",
-        "network",
-        "cpu",
-        "memory",
+        // "network",
+        // "cpu",
+        // "memory",
         "clock"
     ],
     // Modules configuration
