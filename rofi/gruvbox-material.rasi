@@ -19,11 +19,11 @@
 	aqua: #89b482;
 	purple: #d3869b;
 
-  reddark: #c14a4a;
-  yellowdark: #b47109;
+    reddark: #c14a4a;
+    yellowdark: #b47109;
 
   foreground:  @gruv9;
-  background-color:  transparent;
+  background-color:  rgb(30, 30, 30);
     
   highlight: underline bold #eee0b7;
 
@@ -34,16 +34,15 @@
 }
 
 window {
-    location: north east;
-    anchor:   north east;
-    height: 20em;
-    width: 16em;
-    transparency: "real";
+    location: north;
+    anchor:   north;
+    height: 15em;
+    width: 26em;
     spacing: 0;
     children:  [mainbox];
     orientation: horizontal;
-    x-offset: -8px;
-    y-offset: 36px;
+    /* x-offset: -8px; */
+    y-offset: 48px;
     /* border: 2px solid; */
     /* border-color: #000000FF; */
     /* border-radius: @b-radius; */
@@ -63,7 +62,7 @@ message {
 inputbar {
     color: @gruv6;
     padding: 14px;
-    background-color: @transparent;
+    /* background-color: @transparent; */
 }
 
 entry, prompt, case-indicator {
@@ -77,7 +76,7 @@ prompt {
 
 listview {
     padding: 8px;
-    background-color: @transparent;
+    /* background-color: @transparent; */
     dynamic: false;
 }
 
@@ -87,7 +86,7 @@ element {
     border-radius: 2px;
     color: @foreground;
     text-color: @gruv6;
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 
 element.normal.active {
@@ -109,6 +108,10 @@ element.selected.active {
 
 element.selected.urgent {
     background-color: @red;
+}
+
+element-text.selected.normal, element-icon.selected.normal {
+    background-color: #2B2B2B;
 }
 
 element-text, element-icon {
